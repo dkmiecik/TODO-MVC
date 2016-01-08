@@ -1,0 +1,96 @@
+div.container {
+    width: 20%;
+    height: 400px;
+    margin: 10% auto;
+}
+
+div.add-list{
+    display: block;
+}
+
+div.row {
+    margin-bottom: 5px;
+    width: 100%;
+    display: inline-table;
+}
+
+input[type='text']#add-input, p {
+    border: medium solid #00b0ff;
+    border-radius: 1em 0 0 1em;
+    width: 260px;
+    height: 50px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.14), 0px 4px 8px rgba(0, 0, 0, 0.28);
+    box-sizing: content-box;
+    outline: medium none;
+    padding: 0px;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
+
+p {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+}
+
+p:hover {
+    border: medium solid #f44336;
+}
+
+button#add-button, button.remove-button {
+    border-left: 0;
+    border-radius: 0 1em 1em 0;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.14), 0px 4px 8px rgba(0, 0, 0, 0.28);
+    box-sizing: content-box;
+    cursor: pointer;
+    outline: medium none;
+    padding: 0px;
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+button#add-button {
+    border: medium solid #00b0ff;
+    background: #00b0ff;
+}
+
+button#add-button:after {
+    content: '+';
+}
+
+button.remove-button {
+    display: table-cell;
+    border: medium solid #f44336;
+    background: #f44336;
+}
+
+button.remove-button:after {
+    content: '-';
+}
+
+span#tooltip {
+    position: absolute;
+    width:140px;
+    color: #FFFFFF;
+    background: #000000;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 6px;
+}
+span#tooltip.show {
+    visibility: visible;
+    opacity: 0.8;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -110px;
+    z-index: 999;
+    top: 150px;
+}

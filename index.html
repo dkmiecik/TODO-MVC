@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Test</title>
+    <script src="index.js"></script>
+    <script src="Views/view.js"></script>
+    <script src="Models/model.js"></script>
+    <script src="Controllers/controller.js"></script>
+    <script src="Handlebars/events.js"></script>
+    <script src="Observer/Subject.js"></script>
+    <script src="Observer/Observer.js"></script>
+    <link rel="stylesheet" type="text/css" href="Styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <span id="tooltip">Please fill input!</span>
+            <input id="add-input" type="text" placeholder="Type your text." maxlength="20"/>
+            <button id="add-button"></button>
+        </div>
+        <div class="add-list">
+            <ul id="items-list">
+            </ul>
+            <span id="counter"></span>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        index().initialize();
+    </script>
+</body>
+</html>
